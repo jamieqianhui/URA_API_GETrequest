@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon May 20 15:34:40 2019
-
 @author: jamielu
 """
-
 import json
 import requests
 
@@ -28,8 +26,7 @@ def get_token():
 token_info = get_token()
 
 if token_info is not None:
-    print("Here's your token: "+'\n'+token_info['Result'])
-    
+    print("Here's your token: "+'\n'+token_info['Result'])    
 else:
     print('[!] Request Failed')
 
@@ -65,8 +62,7 @@ def get_data():
 data_info = get_data()
 
 if data_info is not None:
-    print("Success! json dataset to convert to csv is embedded in data_info['Result']")
-    
+    print("Success! json dataset to convert to csv is embedded in data_info['Result']")   
 else:
     print('[!] Request Failed')
 
